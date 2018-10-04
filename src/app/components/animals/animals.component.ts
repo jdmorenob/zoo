@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './animals.component.html'
 })
 export class AnimalsComponent implements OnInit {
-  title = 'Animals';
+  title = 'Animales';
 
   ngOnInit(){
   	console.log('Animals component loaded');

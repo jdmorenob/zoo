@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'keepers',
   templateUrl: './keepers.component.html'
 })
-export class KeeperComponent implements OnInit {
-  title = 'Keepers';
+export class KeepersComponent implements OnInit {
+  title = 'Cuidadores';
 
   ngOnInit(){
   	console.log('Keepers component loaded');

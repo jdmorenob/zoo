@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var jQuery:any;
+declare var $:any;
 
 @Component({
 	selector: 'tienda',
@@ -6,7 +8,7 @@ import { Component } from '@angular/core';
 	styleUrls: ['./tienda.component.css']
 })
 
-export class TiendaComponent {
+export class TiendaComponent implements OnInit{
 	public titulo: string;
 	public nombreDelParque: string;
 
@@ -21,5 +23,14 @@ export class TiendaComponent {
 
 	verDatosParque($event){
 		console.log($event);
+	}
+
+	ngOnInit(){
+		$('#caja').dotdotdot();
+		$('#textojq').hide();
+		$('#botonjq').click(function() {
+			console.log('click desde jquery');
+			$('#textojq').slideToggle();
+		});
 	}
 }
