@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Routing, AppRoutingProviders } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Modules
 import { EmailModule } from './modules/email/email.module';
@@ -30,6 +31,7 @@ import { KeepersComponent } from './components/keepers/keepers.component';
     BrowserModule,
     FormsModule,
     Routing,
+    BrowserAnimationsModule,
     EmailModule,
     AdminModule 
   ],

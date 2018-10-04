@@ -1,30 +1,32 @@
-<a class="boton_transiciones">Transiciones</a>
-<div class="caja_animada"></div>
-<hr>
-<h4>Utilizar Jquery dentro de Angular</h4>
-<button id="botonjq">Mostrar textos</button>
-<p id="textojq" class="alert alert-warning">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat illo, sit asperiores autem tempora possimus quia unde laborum animi, harum velit corporis odio ad eum at a mollitia vero error!
-</p>
+<div class="col-lg-12" [@fadeIn]>
+	<a class="boton_transiciones">Transiciones</a>
+	<div class="caja_animada"></div>
+	<hr>
+	<h4>Utilizar Jquery dentro de Angular</h4>
+	<button id="botonjq">Mostrar textos</button>
+	<p id="textojq" class="alert alert-warning">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat illo, sit asperiores autem tempora possimus quia unde laborum animi, harum velit corporis odio ad eum at a mollitia vero error!
+	</p>
 
-<div id="caja" style="border: 1px solid black; width: 150px; height: 50px;">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat illo, sit asperiores autem tempora possimus quia unde laborum animi, harum velit corporis odio ad eum at a mollitia vero error!
+	<div id="caja" style="border: 1px solid black; width: 150px; height: 50px;">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat illo, sit asperiores autem tempora possimus quia unde laborum animi, harum velit corporis odio ad eum at a mollitia vero error!
+	</div>
+
+	<hr/>
+	<h1>{{titulo}}</h1>
+	<ul>
+		<li>Camiseta roja</li>
+		<li>Gorrar Negra</li>
+	</ul>
+	<p>
+		Nombre del parque:
+		<input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()" />
+	</p>
+
+	<p>Resultado: {{nombreDelParque}}</p>
+	 
+	<hr/>
+	Hijo:
+
+	<parques [titulo]="nombreDelParque" (data)="verDatosParque($event)" ></parques>
 </div>
-
-<hr/>
-<h1>{{titulo}}</h1>
-<ul>
-	<li>Camiseta roja</li>
-	<li>Gorrar Negra</li>
-</ul>
-<p>
-	Nombre del parque:
-	<input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()" />
-</p>
-
-<p>Resultado: {{nombreDelParque}}</p>
- 
-<hr/>
-Hijo:
-
-<parques [titulo]="nombreDelParque" (data)="verDatosParque($event)" ></parques>

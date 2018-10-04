@@ -2,7 +2,10 @@
 	"folders":
 	[
 		{
-			"path": "/home/davidmoreno/proyectos/zoo"
+			"path": "."
+		},
+		{
+			"path": "/home/davidmoreno/proyectos/zoo-backend"
 		}
 	]
 }
